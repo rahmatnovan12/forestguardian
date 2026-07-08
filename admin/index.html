@@ -4,9 +4,56 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Dashboard Admin - Forest Guardian</title>
+    <!-- Widget Utama Netlify Identity -->
     <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
   </head>
   <body>
+    <!-- Skrip Utama Decap CMS -->
     <script src="https://unpkg.com/decap-cms@^3.0.0/dist/decap-cms.js"></script>
+
+    <!-- Skrip Kustom Keren untuk Mengubah Tampilan Pratinjau Artikel -->
+    <script>
+      // 1. Memasukkan Tailwind CSS langsung ke dalam kotak pratinjau admin
+      CMS.registerPreviewStyle("https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css");
+
+      // 2. Membuat komponen tampilan artikel modern ala Forest Guardian
+      var PostPreview = createClass({
+        render: function() {
+          var entry = this.props.entry;
+          
+          // Mengambil data pengetikan dari kolom kiri secara realtime
+          var title = entry.getIn(['data', 'title']) || 'Judul Artikel Kamu';
+          var description = entry.getIn(['data', 'description']) || 'Ringkasan tulisan akan muncul di sini...';
+          var thumbnail = this.props.getAsset(entry.getIn(['data', 'thumbnail']));
+          var body = this.props.widgetFor('body');
+          
+          // Mengambil tanggal (jika belum diisi, gunakan tanggal hari ini)
+          var dateObj = entry.getIn(['data', 'date']);
+          var dateString = dateObj ? new Date(dateObj).toLocaleDateString('id-ID', { day: 'numeric', month: 'long', year: 'numeric' }) : 'Tanggal Rilis';
+
+          return h('div', { className: 'bg-stone-100 p-6 min-h-screen text-stone-900 font-sans' },
+            h('div', { className: 'max-w-xl mx-auto bg-white rounded-2xl shadow-md border border-stone-200 overflow-hidden transition' },
+              // Jika ada foto yang di-upload, tampilkan fotonya dengan rapi
+              thumbnail ? h('img', { src: thumbnail.toString(), className: 'w-full h-52 object-cover' }) : 
+                          h('div', { className: 'w-full h-52 bg-emerald-950/10 flex items-center justify-center text-stone-400' }, 'Belum ada foto utama'),
+              
+              h('div', { className: 'p-6' },
+                h('span', { className: 'text-xs font-semibold uppercase tracking-wider text-emerald-700' }, dateString),
+                h('h2', { className: 'text-2xl font-bold text-emerald-950 mt-2 leading-tight' }, title),
+                
+                // Kotak kutipan ringkasan dengan border kuning amber khas Forest Guardian
+                h('p', { className: 'text-stone-600 text-sm mt-3 border-l-4 border-amber-600 pl-3 italic bg-stone-50 py-1' }, description),
+                
+                // Isi tulisan artikel (Markdown content)
+                h('div', { className: 'mt-6 text-stone-800 leading-relaxed border-t border-stone-100 pt-4 font-light text-sm' }, body)
+              )
+            )
+          );
+        }
+      });
+
+      // 3. Daftarkan template pratinjau ini khusus untuk koleksi "blog" artikel kita
+      CMS.registerPreviewTemplate("blog", PostPreview);
+    </script>
   </body>
 </html>
