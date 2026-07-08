@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forest Guardian - Gerakan Kolektif Anak Muda</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font Awesome Icons -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <style>
+        .hero-bg {
+            background-image: linear-gradient(rgba(12, 36, 20, 0.65), rgba(12, 36, 20, 0.85)), url('https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?auto=format&fit=crop&q=80&w=1600');
+            background-size: cover;
+            background-position: center;
+        }
+    </style>
+</head>
+<body class="bg-stone-50 text-stone-900 font-sans scroll-smooth">
+
+    <!-- NAVBAR -->
+    <nav class="sticky top-0 z-50 bg-emerald-950 text-stone-100 shadow-md">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-16">
+                <div class="flex items-center gap-2">
+                    <i class="fas fa-tree text-emerald-400 text-2xl"></i>
+                    <span class="font-bold text-xl tracking-wider text-emerald-50">FOREST GUARDIAN</span>
+                </div>
+                <div class="hidden md:flex space-x-8 font-medium">
+                    <a href="#hero" class="hover:text-emerald-400 transition">Home</a>
+                    <a href="#profil" class="hover:text-emerald-400 transition">Profil & Visi Misi</a>
+                    <a href="#artikel" class="hover:text-emerald-400 transition">Artikel</a>
+                    <a href="#galeri" class="hover:text-emerald-400 transition">Galeri</a>
+                    <a href="#donasi" class="bg-amber-600 hover:bg-amber-700 px-4 py-2 rounded-full text-white transition shadow-sm">Donasi <i class="fas fa-heart ml-1"></i></a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- HERO SECTION -->
+    <header id="hero" class="hero-bg min-h-screen flex items-center justify-center text-center px-4">
+        <div class="max-w-3xl text-stone-100">
+            <span class="bg-emerald-500/20 text-emerald-300 border border-emerald-500/30 px-4 py-1.5 rounded-full text-sm font-semibold uppercase tracking-widest">Aksi Kolektif Pemuda</span>
+            <h1 class="text-4xl md:text-6xl font-extrabold mt-6 leading-tight">Menjaga Rimba, Memperjuangkan Keadilan Ruang</h1>
+            <p class="text-lg md:text-xl text-stone-300 mt-6 font-light max-w-2xl mx-auto">
+                Gerakan kolektif anak muda dalam memperjuangkan kelestarian hutan, lingkungan hidup, serta tata kelola ruang yang berkeadilan, transparan, dan berkelanjutan.
+            </p>
+            <div class="mt-10 flex flex-col sm:flex-row justify-center gap-4">
+                <a href="#artikel" class="bg-emerald-600 hover:bg-emerald-700 text-white font-semibold px-8 py-3.5 rounded-lg shadow-lg transition duration-300">Baca Publikasi Data</a>
+                <a href="#profil" class="bg-transparent hover:bg-white/10 border border-white/40 text-white font-semibold px-8 py-3.5 rounded-lg transition duration-300">Kenali Gerakan Kami</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- PROFIL & VISI MISI -->
+    <section id="profil" class="py-20 bg-stone-100">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-2xl mx-auto mb-16">
+                <h2 class="text-3xl font-bold text-emerald-950">Siapa Forest Guardian?</h2>
+                <div class="w-16 h-1 bg-amber-600 mx-auto mt-4 rounded"></div>
+                <p class="text-stone-600 mt-4">Kami adalah simpul bergerak anak muda yang gelisah atas ketidakadilan tata kelola ruang dan laju deforestasi yang mengancam masa depan.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-stretch">
+                <!-- Visi -->
+                <div class="bg-white p-8 rounded-2xl shadow-sm border border-stone-200/60 flex flex-col justify-between">
+                    <div>
+                        <div class="w-12 h-12 bg-emerald-100 rounded-xl flex items-center justify-center text-emerald-800 text-xl font-bold mb-6">
+                            <i class="fas fa-eye"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold text-emerald-900 mb-4">Visi Kami</h3>
+                        <p class="text-stone-600 leading-relaxed">
+                            Mewujudkan gerakan kolektif anak muda yang solid, mandiri, dan berani dalam memperjuangkan kelestarian hutan, lingkungan hidup, serta tata kelola ruang yang berkeadilan (transparan) dan berkelanjutan demi generasi masa kini dan masa depan.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Misi -->
+                <div class="bg-white p-8 rounded-2xl shadow-sm border border-stone-200/60">
+                    <div class="w-12 h-12 bg-amber-100 rounded-xl flex items-center justify-center text-amber-800 text-xl font-bold mb-6">
+                        <i class="fas fa-bullseye"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-emerald-900 mb-4">Misi Perjuangan</h3>
+                    <ul class="space-y-4 text-stone-600">
+                        <li class="flex items-start gap-3">
+                            <i class="fas fa-check text-emerald-600 mt-1"></i>
+                            <span><strong>Edukasi & Kampanye:</strong> Membangun kesadaran kritis anak muda mengenai pentingnya menjaga ekosistem hutan.</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <i class="fas fa-check text-emerald-600 mt-1"></i>
+                            <span><strong>Advokasi & Publikasi Data:</strong> Membuka transparansi data tata kelola ruang dan perizinan hutan secara independen.</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <i class="fas fa-check text-emerald-600 mt-1"></i>
+                            <span><strong>Aksi Nyata Lapangan:</strong> Menginisiasi restorasi lahan, penanaman pohon, dan pendampingan masyarakat adat/lokal.</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ARTIKEL & PUBLIKASI DATA -->
+    <section id="artikel" class="py-20 bg-white">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row md:items-end justify-between mb-12">
+                <div>
+                    <h2 class="text-3xl font-bold text-emerald-950">Publikasi & Kabar Hutan</h2>
+                    <div class="w-16 h-1 bg-amber-600 mt-4 rounded"></div>
+                </div>
+                <p class="text-stone-500 mt-4 md:mt-0 max-w-md">Hasil riset, investigasi, data spasial, dan catatan gerakan dari lapangan oleh para Penjaga Rimba.</p>
+            </div>
+
+            <!-- Bagian ini akan otomatis terisi jika menggunakan Jekyll/GitHub Pages. 
+                 Jika tidak menggunakan Jekyll, bagian di dalam tag {% ... %} tidak akan muncul, 
+                 maka kami sediakan juga struktur demonstrasi di bawahnya. -->
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                
+                <!-- LOOPING ARTIKEL AKTIF (Jekyll Syntax) -->
+                {% for post in site.posts limit:6 %}
+                <article class="bg-stone-50 rounded-xl overflow-hidden shadow-sm border border-stone-200 hover:shadow-md transition">
+                    <img src="{{ post.thumbnail }}" alt="{{ post.title }}" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <span class="text-xs font-semibold uppercase tracking-wider text-emerald-700">{{ post.date | date: "%d %b %Y" }}</span>
+                        <h3 class="text-xl font-bold text-emerald-950 mt-2 line-clamp-2 hover:text-emerald-700">
+                            <a href="{{ post.url }}">{{ post.title }}</a>
+                        </h3>
+                        <p class="text-stone-600 text-sm mt-3 line-clamp-3">{{ post.description }}</p>
+                        <a href="{{ post.url }}" class="inline-block text-emerald-700 font-semibold text-sm mt-4 hover:underline">Baca Selengkapnya &rarr;</a>
+                    </div>
+                </article>
+                {% else %}
+                
+                <!-- TEMPLATE DUMMY / PLACEHOLDER (Muncul jika website dijalankan lokal tanpa Jekyll) -->
+                <article class="bg-stone-50 rounded-xl overflow-hidden shadow-sm border border-stone-200">
+                    <img src="https://images.unsplash.com/photo-1448375240586-882707db888b?auto=format&fit=crop&q=80&w=600" alt="Hutan Lindung" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <span class="text-xs font-semibold uppercase tracking-wider text-emerald-700">8 Juli 2026</span>
+                        <h3 class="text-xl font-bold text-emerald-950 mt-2">Menakar Transparansi Konsesi Lahan di Hutan Adat Papua</h3>
+                        <p class="text-stone-600 text-sm mt-3">Analisis spasial menunjukkan tumpang tindih lahan perkebunan kelapa sawit dengan wilayah adat yang belum diakui regulasi lokal...</p>
+                        <span class="inline-block text-emerald-400 font-semibold text-sm mt-4 cursor-not-allowed">[Contoh Postingan Dashboard Admin]</span>
+                    </div>
+                </article>
+
+                <article class="bg-stone-50 rounded-xl overflow-hidden shadow-sm border border-stone-200">
+                    <img src="https://images.unsplash.com/photo-1511497584788-876760111969?auto=format&fit=crop&q=80&w=600" alt="Anak muda menanam" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <span class="text-xs font-semibold uppercase tracking-wider text-emerald-700">5 Juli 2026</span>
+                        <h3 class="text-xl font-bold text-emerald-950 mt-2">Gerakan Adopsi Pohon: Langkah Konkrit Memulihkan Hulu Sungai</h3>
+                        <p class="text-stone-600 text-sm mt-3">Lebih dari 500 anak muda bergerak bersama menanam bibit pohon endemik di kawasan kritis pegunungan untuk cegah banjir bandang...</p>
+                        <span class="inline-block text-emerald-400 font-semibold text-sm mt-4 cursor-not-allowed">[Contoh Postingan Dashboard Admin]</span>
+                    </div>
+                </article>
+
+                <article class="bg-stone-50 rounded-xl overflow-hidden shadow-sm border border-stone-200">
+                    <img src="https://images.unsplash.com/photo-1473448912268-2022ce9509d8?auto=format&fit=crop&q=80&w=600" alt="Deforestasi" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <span class="text-xs font-semibold uppercase tracking-wider text-amber-700">1 Juli 2026</span>
+                        <h3 class="text-xl font-bold text-emerald-950 mt-2">Catatan Kritis RUU Masyarakat Adat dan Dampaknya pada Hutan</h3>
+                        <p class="text-stone-600 text-sm mt-3">Mengapa penundaan pengesahan RUU ini mempermudah korporasi besar melakukan eksploitasi tanpa izin komunitas lokal...</p>
+                        <span class="inline-block text-emerald-400 font-semibold text-sm mt-4 cursor-not-allowed">[Contoh Postingan Dashboard Admin]</span>
+                    </div>
+                </article>
+                {% endfor %}
+
+            </div>
+        </div>
+    </section>
+
+    <!-- GALERI KEGIATAN -->
+    <section id="galeri" class="py-20 bg-stone-100">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-2xl mx-auto mb-16">
+                <h2 class="text-3xl font-bold text-emerald-950">Galeri Aksi Kita</h2>
+                <div class="w-16 h-1 bg-amber-600 mx-auto mt-4 rounded"></div>
+                <p class="text-stone-600 mt-4">Dokumentasi keringat, tawa, dan perjuangan kolektif anak muda di berbagai belahan hutan Nusantara.</p>
+            </div>
+
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+                <div class="overflow-hidden rounded-xl shadow-sm aspect-square bg-stone-300">
+                    <img src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&q=80&w=400" alt="Aksi 1" class="w-full h-full object-cover hover:scale-105 transition duration-500">
+                </div>
+                <div class="overflow-hidden rounded-xl shadow-sm aspect-square bg-stone-300">
+                    <img src="https://images.unsplash.com/photo-1502082553048-f009c37129b9?auto=format&fit=crop&q=80&w=400" alt="Aksi 2" class="w-full h-full object-cover hover:scale-105 transition duration-500">
+                </div>
+                <div class="overflow-hidden rounded-xl shadow-sm aspect-square bg-stone-300">
+                    <img src="https://images.unsplash.com/photo-1513836279014-a89f7a76ae86?auto=format&fit=crop&q=80&w=400" alt="Aksi 3" class="w-full h-full object-cover hover:scale-105 transition duration-500">
+                </div>
+                <div class="overflow-hidden rounded-xl shadow-sm aspect-square bg-stone-300">
+                    <img src="https://images.unsplash.com/photo-1441974231531-c6227db76b6e?auto=format&fit=crop&q=80&w=400" alt="Aksi 4" class="w-full h-full object-cover hover:scale-105 transition duration-500">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- DONASI -->
+    <section id="donasi" class="py-20 bg-emerald-950 text-stone-100 relative overflow-hidden">
+        <div class="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/leaf.png')] opacity-10"></div>
+        <div class="max-w-4xl mx-auto px-4 text-center relative z-10">
+            <i class="fas fa-hand-holding-heart text-amber-500 text-5xl mb-6"></i>
+            <h2 class="text-3xl md:text-4xl font-bold">Dukung Gerakan Swadaya Kami</h2>
+            <p class="text-emerald-200 mt-4 max-w-2xl mx-auto leading-relaxed">
+                Setiap rupiah yang Anda donasikan digunakan 100% secara transparan untuk membiayai operasional investigasi data spasial hutan, logistik penanaman bibit, serta advokasi hukum masyarakat adat.
+            </p>
+            
+            <div class="mt-10 bg-white text-stone-800 p-8 rounded-2xl shadow-xl max-w-md mx-auto">
+                <h3 class="font-bold text-lg text-emerald-900 mb-2">Transfer Donasi Mandiri</h3>
+                <p class="text-sm text-stone-500 mb-6">Bank Mandiri (Kode: 008)</p>
+                <div class="bg-stone-100 p-4 rounded-xl font-mono text-xl tracking-wider font-bold text-center border border-stone-200 text-emerald-950">
+                    123-00-0987654-3
+                </div>
+                <p class="text-xs text-stone-500 mt-2">Atas Nama: Yayasan Kolektif Forest Guardian</p>
+                <p class="text-xs text-emerald-700 mt-4 font-semibold"><i class="fas fa-shield-alt"></i> Seluruh laporan keuangan diaudit & dipublikasi berkala.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="bg-stone-900 text-stone-400 py-12 border-t border-stone-800">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row justify-between items-center gap-6">
+            <div>
+                <p class="font-bold text-stone-200">&copy; 2026 Forest Guardian. All Rights Reserved.</p>
+                <p class="text-xs mt-1 text-stone-500">Dibuat dengan semangat transparansi oleh anak muda untuk kelestarian alam.</p>
+            </div>
+            <div class="flex space-x-6 text-xl">
+                <a href="#" class="hover:text-emerald-400 transition"><i class="fab fa-instagram"></i></a>
+                <a href="#" class="hover:text-emerald-400 transition"><i class="fab fa-twitter"></i></a>
+                <a href="#" class="hover:text-emerald-400 transition"><i class="fab fa-github"></i></a>
+                <a href="/admin/" class="text-xs bg-stone-800 hover:bg-stone-700 px-3 py-1.5 rounded text-stone-300 border border-stone-700 transition">Portal Admin <i class="fas fa-lock ml-1"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Netlify Identity Widget Link (Untuk sistem login di halaman admin) -->
+    <script>
+      if (window.netlifyIdentity) {
+        window.netlifyIdentity.on("init", user => {
+          if (!user) {
+            window.netlifyIdentity.on("login", () => {
+              document.location.href = "/admin/";
+            });
+          }
+        });
+      }
+    </script>
+</body>
+</html>

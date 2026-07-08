@@ -1,0 +1,20 @@
+backend:
+  name: git-gateway
+  branch: main # Ganti ke 'master' jika repositori utama Anda bernama master
+
+media_folder: "assets/images/uploads" # Folder tempat foto artikel otomatis ter-upload
+public_folder: "/assets/images/uploads"
+
+collections:
+  - name: "blog"
+    label: "Artikel & Publikasi"
+    folder: "_posts" # Menyimpan file markdown tulisan baru ke folder _posts
+    create: true # Mengaktifkan tombol "Tulis Artikel Baru" di dashboard
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    fields:
+      - {label: "Layout", name: "layout", type: "hidden", default: "post"}
+      - {label: "Judul Artikel", name: "title", type: "string"}
+      - {label: "Tanggal Rilis", name: "date", type: "datetime"}
+      - {label: "Foto Utama", name: "thumbnail", type: "image"}
+      - {label: "Ringkasan Pendek", name: "description", type: "text"}
+      - {label: "Isi Konten Tulisan", name: "body", type: "markdown"}

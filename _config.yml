@@ -1,0 +1,7 @@
+title: Forest Guardian
+description: Gerakan kolektif anak muda dalam memperjuangkan kelestarian hutan, lingkungan hidup, serta tata kelola ruang yang berkeadilan dan berkelanjutan.
+baseurl: ""
+url: ""
+markdown: kramdown
+theme: minima # Optional, but we use our own custom index.html anyway
+exclude: [admin]
